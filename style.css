@@ -1,0 +1,141 @@
+* {
+  font-family: lato, Arial, Helvetica, sans-serif;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+p {
+  color: #555;
+}
+body {
+  background-color: #e6105f;
+  font-family: lato, Arial, Helvetica, sans-serif;
+  /* font-size: 16px; */
+  /* line-height: 1.58; */
+  color: #555;
+}
+/* .wrapper {
+  border: 2px solid rebeccapurple;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 5px;
+} */
+
+div.main-banner {
+  /* background: #e6105f; */
+  width: 93%;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.main-banner img {
+  width: 100%;
+  opacity: 0.1;
+}
+.text-banner {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  text-align: center;
+  color: #ffffff;
+}
+.text-banner h1 {
+  font-size: 3em;
+  margin-bottom: 5px;
+}
+.text-banner p {
+  color: #fff;
+}
+.cards {
+  /* border-radius: 0.25;
+  margin-bottom: 3rem; */
+  margin: 0 auto;
+  max-width: 960px;
+  display: grid;
+  background: #fff;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, minmax(50px, auto));
+  grid-gap: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-top: 0;
+  
+}
+/* .cards.card-block {
+  padding: 4rem;
+} */
+.left {
+  /*padding-left: 2px;*/
+  text-align: center;
+}
+.right {
+  line-height: 2em;
+}
+
+.left img {
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+}
+
+.header {
+  grid-column: 1/3;
+}
+
+/* styling overlay */
+/* .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  position: relative;
+  background: rgba(255, 20, 100, 0.4);
+}
+
+.container-section {
+  border: 3px solid rgb(10, 230, 83);
+  height: fit-content;
+} */
+/* styling of profille */
+/* #profile {
+  margin-bottom: 50px;
+  background: #ffffff;
+  float: left;
+} */
+/* #profile ul{
+    border: 2px solid crimson;
+    float: left; */
+
+/* #profile li {
+  width: 45%;
+  padding-left: 20px;
+  border: 1px solid mediumseagreen;
+  margin: 0 2%;
+  height: 200px;
+
+} */
+/* #profile li img {
+  
+  width: 300px;
+  height: 200px;
+} */
+
+/* 
+#profile :after {
+  display: block;
+  content: "";
+  clear: both;
+} */

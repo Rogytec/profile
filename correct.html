@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile2</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      p{
+        color: #777;
+        padding: 5px;
+      }
+      span{
+        color: #777;
+        padding: 5px;
+        font-weight: 100;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 1200px;
+      }
+      header {
+        background: url(assets/images/img-01.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        position: relative;
+        opacity: 0.2;
+      }
+      @media screen and (max-width: 480px) {
+        header {
+          background: url(assets/images/img-01.jpg);
+          background-size: cover;
+          background-position: center;
+          min-height: 300px;
+        }
+        .text-banner {
+          position: absolute;
+          color: #fff;
+          left: 30%;
+          top: 45%;
+          text-align: center;
+        }
+      }
+      body {
+        background-color: #e6105f;
+        font-family: lato, Arial, Helvetica, sans-serif;
+      }
+      .text-banner {
+        position: absolute;
+        color: #fff;
+        left: 50%;
+        top: 45%;
+        text-align: center;
+      }
+      .cards {
+        background: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: (3, minmax(100px, auto));
+        grid-gap: 5px;
+        border: 1px solid rebeccapurple;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+      .card-content-2{
+          padding: 25px;
+        padding-top: 20px;
+        grid-column: 1/4;
+      }
+      .card-content-3{
+        padding: 20px;
+        padding-top: 20px;
+        grid-column: 1/4;
+      }
+      
+      .text {
+        grid-column: 1/4;
+        padding: 2rem;
+        text-transform: capitalize;
+      }
+      #imag {
+        text-align: center;
+      }
+      #imag img {
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      #info {
+        grid-column: 2/4;
+        line-height: 2;
+        padding: 2px;
+      }
+      .card-content {
+        padding: 40px;
+        padding-top: 20px;
+      }
+      .card-content img {
+        width: 300px;
+        height: 200px;
+        /* margin-top: 20px;
+        margin-bottom: 20px; */
+      }
+      h2 span{
+        color: black;
+      }
+     h2 span:hover{
+        color: #e6105f ;
+        cursor: pointer;
+      }
+      input, textarea{
+        border: none;
+        -webkit-appearance: none;
+        -ms-progress-appearance: none;
+        appearance: none;
+        background: #bebbbb;
+        padding: 20px;
+        border-radius: 5px;
+        width: 96%;
+        outline: none;
+      }
+      textarea{
+        width: 100%;
+        min-height: 100px;
+      }
+      .button{
+        background: #e6105f;
+        color: #fff;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 30px;
+        margin-left: 0;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <div class="text-banner">
+        <h1>I am Rauf Yusuf</h1>
+        <p>web designer</p>
+      </div>
+    </header>
+    <div class="container cards">
+      <div class="text"><h2>About me</h2></div>
+      <div id="imag"><img src="assets/images/img-01.jpg" alt="" /></div>
+      <div id="info">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae autem
+          optio aliquid aliquam corrupti sequi dolor deserunt, quo officia illum
+          dignissimos debitis incidunt placeat eaque quos, ad quidem
+          voluptatibus deleniti. Illum maxime perferendis minima et a suscipit
+          provident quia dolore, fugiat necessitatibus pariatur laboriosam
+          nostrum minus unde totam doloremque beatae ipsum ipsam sapiente quidem
+          magni maiores officiis officia? Libero, possimus?
+        </p>
+      </div>
+    </div>
+    <div class="container cards">
+      <div class="text">
+        <h2>Projects</h2>
+      </div>
+      <div class="card-content">
+        <img src="assets/images/img-02.jpg" alt="" />
+        <h2>Amelia App</h2>
+        <p><time>June 2017</time></p>
+      </div>
+      <div class="card-content">
+        <img src="assets/images/img-03.jpg" alt="" />
+        <h2>Amelia App</h2>
+        <p><time>June 2017</time></p>
+      </div>
+      <div class="card-content">
+        <img src="assets/images/img-04.jpg" alt="" />
+        <h2>Amelia App</h2>
+        <p><time>June 2017</time></p>
+      </div>
+    </div>
+    <div class="container cards">
+      <div class="text">
+        <h2 class="title">work</h2>
+      </div>
+      <div class="card-content-2">
+        <p><time>2017-2015</time></p>
+        <h2>Web developer - <span> Orson.io</span></h2>
+        <p>
+          Leo vel orci porta non pulvinar neque laoreet suspendisse interdum.
+          Vitae ultricies leo integer malesuada nunc. Imperdiet proin fermentum
+          leo vel orci porta non pulvinar neque. Fermentum leo vel orci porta
+          non. Posuere sollicitudin aliquam ultrices sagittis. Aliquam faucibus
+          purus in massa tempor nec.
+        </p>
+      </div>
+      <div class="card-content-3">
+            <p><time>2017-2015</time></p>
+            <h2>Web developer - <span> Orson.io</span></h2>
+            <p>
+              Leo vel orci porta non pulvinar neque laoreet suspendisse
+              interdum. Vitae ultricies leo integer malesuada nunc. Imperdiet
+              proin fermentum leo vel orci porta non pulvinar neque. Fermentum
+              leo vel orci porta non. Posuere sollicitudin aliquam ultrices
+              sagittis. Aliquam faucibus purus in massa tempor nec.
+            </p>
+      </div>
+    </div>
+      <div class="container cards">
+          <div class="text">
+              <h2 class="title">education</h2>
+          </div>
+            <div class="card-content">
+               <p><time>2017-2015</time></p>
+            <h2>Design Master</h2>
+            <p>Chicago University</p>
+            </div>
+            <div class="card-content">
+               <p><time>2015-2012</time></p>
+            <h2>Metrics Degree</h2>
+            <p>Ecole 87</p>
+            </div>
+            <div class="card-content">
+               <p><time>2012-2011</time></p>
+            <h2>Motion Design Course</h2>
+            <p>Pascal’s Lee Studio</p>
+            </div>
+      </div>
+      <div class="container cards">
+        <div class="text">
+          <h2 class="title">Language</h2>
+        </div>
+        <div class="card-content">
+          <h3>English <span >Bilingual</span></h3>
+        </div>
+        <div class="card-content">
+          <h3>French <span >Fluent</span></h3>
+        </div>
+        <div class="card-content">
+          <h3>Arabic <span >Beginner</span></h3>
+        </div>
+      </div>
+      <!-- start here -->
+      <div class="container cards">
+        <div class="text">
+          <h2>Social Network</h2>
+        </div>
+        <div class="card-content">
+          <a href="http://www.twitter.com">@rogy</a>
+        </div>
+        <div class="card-content">
+          <a href="http://www.twitter.com">@rogy</a>
+        </div>
+        <div class="card-content">
+          <a href="http://www.twitter.com">@rogy</a>
+        </div>
+      </div>
+      <!-- start here -->
+      <div class="container cards">
+        <div class="text">
+          <h2 class="title">contact</h2>
+        </div>
+        <div class="card-content-2 form">
+          <input type="email" name="mail" placeholder="email" id="" />
+       </div>
+        <div class="card-content-2 form">
+          <input type="text" placeholder="Subject" />
+        </div>
+        <div class="card-content form">
+          <textarea
+            name="message"
+            placeholder="enter your message"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <a href="" class="button card-content-2">Send message</a>
+        </div>
+      </div>
+  </body>
+</html>

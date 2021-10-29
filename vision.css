@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  color: #777;
+  padding: 5px;
+  line-height: 2;
+}
+span {
+  color: #777;
+  padding: 5px;
+  font-weight: 100;
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+}
+header {
+  background: url(assets/images/img-01.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  opacity: 0.2;
+}
+@media screen and (max-width: 480px) {
+  header {
+    background: url(assets/images/img-01.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+  }
+  .text-banner {
+    position: absolute;
+    color: #fff;
+    left: 30%;
+    top: 45%;
+    text-align: center;
+  }
+}
+body {
+  background-color: #e6105f;
+  font-family: lato, Arial, Helvetica, sans-serif;
+}
+.text-banner {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 45%;
+  text-align: center;
+}
+.cards {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: (4, minmax(100px, auto));
+  grid-gap: 5px;
+  border: 1px solid rebeccapurple;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.card-content-2 {
+  padding: 25px;
+  padding-top: 20px;
+  grid-column: 1/4;
+}
+.card-content-3 {
+  padding: 20px;
+  padding-top: 20px;
+  grid-column: 1/4;
+}
+
+.text {
+  grid-column: 1/4;
+  padding: 2rem;
+  text-transform: capitalize;
+}
+#imag {
+  text-align: center;
+}
+#imag img {
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#info {
+  grid-column: 2/4;
+  line-height: 2;
+  padding: 2px;
+}
+.card-content {
+  padding: 40px;
+  padding-top: 20px;
+}
+.card-content img {
+  width: 300px;
+  height: 200px;
+  /* margin-top: 20px;
+        margin-bottom: 20px; */
+}
+h2 span {
+  color: black;
+}
+h2 span:hover {
+  color: #e6105f;
+  cursor: pointer;
+}
+input,
+textarea {
+  border: none;
+  -webkit-appearance: none;
+  -ms-progress-appearance: none;
+  appearance: none;
+  background: #bebbbb;
+  padding: 20px;
+  border-radius: 5px;
+  width: 96%;
+  outline: none;
+}
+textarea {
+  width: 96%;
+  min-height: 100px;
+  grid-column: 1/4;
+  margin-bottom: 0;
+}
+input::placeholder,
+textarea::placeholder {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.button {
+  background: #e6105f;
+  color: #fff;
+  border-radius: 5px;
+}
+a.button {
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  margin-left: 0;
+}
